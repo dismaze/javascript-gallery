@@ -29,20 +29,23 @@ Click on the preview to access a live demo.
 ---
 
 ## Project Structure
-
 ```
 /
-├── _src/                   # All source files (Eleventy input) - THE FILES MUST BE EDITED HERE
-│   ├── manifest.json       # Lists all gallery images (see below)
-│   ├── img/                # The actual image files
-│   ├── index.html          # Gallery page
-│   ├── gallery-modal.js    # All slider + modal logic
-│   └── styles.css          # Gallery styles
+├── _src/                       # All source files (Eleventy input) — edit files here only
+│   ├── img/                    # Image files
+│   ├── index.html              # Gallery page
+│   ├── gallery-modal.js        # Slider + modal logic
+│   ├── manifest.json           # Lists all gallery images (see below)
+│   └── styles.css              # Gallery styles (Tailwind entry point)
 │
-├── _site/                  # Build output (auto-generated, DO NOT EDIT)
+├── _site/                      # Build output — auto-generated, do not edit or commit
 │
-├── eleventy.config.js      # Eleventy configuration
-├── package.json            # Package configuration
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions workflow — builds and deploys on every push to main
+│
+├── eleventy.config.js          # Eleventy configuration (passthrough, input/output dirs)
+├── package.json                # Dependencies and build scripts
 └── .gitignore
 ```
 
