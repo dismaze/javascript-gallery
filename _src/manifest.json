@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "caption": "Top Gun: Furry Edition",
+      "path": "img/squirrel.jpg"
+    },
+    {
+      "caption": "Too cool for Instagram",
+      "path": "img/dog.jpg"
+    },
+    {
+      "caption": "Mondays, basically",
+      "path": "img/sloth.jpg"
+    },
+    {
+      "caption": "Cottagecore final boss",
+      "path": "img/toad.jpg"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{  "scripts": {
+    "build:css": "tailwindcss -i ./_src/styles.css -o ./_site/styles.css",
+    "watch:css": "tailwindcss -i ./_src/styles.css -o ./_site/styles.css --watch",
+    "start:eleventy": "eleventy --serve",
+    "start": "npm-run-all --parallel watch:css start:eleventy",
+    "build": "npm-run-all build:css build:eleventy",
+    "build:eleventy": "eleventy"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "concurrently": "^8.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
