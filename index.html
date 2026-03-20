@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="community">
+        <div class="container">
+
+            <div id="gallery-outer-wrapper">
+                <button onclick="window.moveInline(-1)" class="slider-nav-btn left-btn">❮</button>
+                <button onclick="window.moveInline(1)"  class="slider-nav-btn right-btn">❯</button>
+
+                <div class="track-wrapper">
+                    <div id="inlineSliderTrack"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fullscreen modal — emptied and rebuilt dynamically by JS -->
+    <div id="mediaModal" class="hidden"></div>
+
+    <script src="gallery-modal.js"></script>
+</body>
+</html>
